@@ -1,0 +1,33 @@
+#main{
+    background-color: rgb(93%, 93%, 93%);
+}
+#img-div{
+    background-color: white;
+    display: flex;
+    width: 96%;
+    height: 100%;
+    flex-direction: column;
+    border-style: solid;
+    border-color: aquamarine;
+    align-items: center;
+}
+/*
+    border-style: solid;
+    border-color: aquamarine;
+*/
+#image{
+    border-style: solid;
+    border-color: aquamarine;
+    max-width: 100%;
+    width: 60%;
+    height:auto;
+    margin: 10px;
+}
+#img-caption{
+    border-style: solid;
+    border-color: aquamarine;
+    max-width: 100%;
+    width: 65%;
+    margin: 10px;
+    text-align: center;
+}
