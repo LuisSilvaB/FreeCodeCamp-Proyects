@@ -1,3 +1,14 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;;
+}
+#title{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+}
+#sub-title{
+    text-align: center;
+}
 #main{
     background-color: rgb(93%, 93%, 93%);
 }
@@ -29,5 +40,35 @@
     max-width: 100%;
     width: 65%;
     margin: 10px;
+    text-align: center;
+}
+#tribute-info{
+    border-style: solid;
+    border-color: aquamarine;
+    justify-content: center;
+    text-align: center;
+}
+
+#cronologia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#cronologia ul{
+    max-width: 100%;
+    width: 40%;
+    min-width: 30%;
+    height:auto;
+    border-style: solid;
+    border-color: aquamarine;
+    padding: 10px;
+}
+#cronologia li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer{
     text-align: center;
 }
