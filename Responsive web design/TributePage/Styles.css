@@ -11,15 +11,13 @@ body{
 }
 #main{
     background-color: rgb(93%, 93%, 93%);
+    display: flex;
+    flex-direction: column;
 }
 #img-div{
     background-color: white;
     display: flex;
-    width: 96%;
-    height: 100%;
     flex-direction: column;
-    border-style: solid;
-    border-color: aquamarine;
     align-items: center;
 }
 /*
@@ -27,24 +25,18 @@ body{
     border-color: aquamarine;
 */
 #image{
-    border-style: solid;
-    border-color: aquamarine;
     max-width: 100%;
-    width: 60%;
+    width: 1000px;
     height:auto;
     margin: 10px;
 }
 #img-caption{
-    border-style: solid;
-    border-color: aquamarine;
     max-width: 100%;
-    width: 65%;
+    width: 1000px;
     margin: 10px;
     text-align: center;
 }
 #tribute-info{
-    border-style: solid;
-    border-color: aquamarine;
     justify-content: center;
     text-align: center;
 }
@@ -57,18 +49,30 @@ body{
 }
 #cronologia ul{
     max-width: 100%;
-    width: 40%;
+    width: 500px;
     min-width: 30%;
     height:auto;
-    border-style: solid;
-    border-color: aquamarine;
     padding: 10px;
+}
+@media (max-width:600px){
+    #cronologia ul{
+        max-width: 100%;
+        width: 90%;
+        min-width: 30%;
+        height:auto;
+        padding: 10px;
+    }
 }
 #cronologia li{
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 14px;
 }
-
-.footer{
+#cronologia div{
+    margin-bottom: 3%;
+}
+#footer{
     text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
 }
