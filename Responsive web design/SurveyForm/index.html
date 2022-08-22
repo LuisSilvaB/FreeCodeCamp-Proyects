@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SurveyForm</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">FreeCodeCamp SurveyForm</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <div>
+                <label for="name" id="name-label">Name</label>
+                <br>
+                <input type="text" id="name" placeholder="Enter your name" required>      
+            </div>
+            <div>
+                <label for="email" id="email-label">Email</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>              
+            </div>
+            <div>
+                <label for="age" id="number-label">Age <font SIZE=2>(opcional)</font></label>
+                <br>
+                <input type="number" id="number" min="12" max="60" step="2" placeholder="Age">
+            </div>
+            <div>
+                <label for="age">Which option best describes your current role?</label>
+                <br>
+                <select name="dropdown" id="dropdown" required>
+                    <option disabled>Select current role</option>
+                    <option>Student</option>
+                    <option selected>Full Time Job</option>
+                    <option>Full Time Learner</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>                
+            </div>
+            <div>
+                <label id="label-recommend">Would you recommend freeCodeCamp to a friend?</label>
+                <br>
+                <input type="radio" name="recommend">Definitely
+                <br>
+                <input type="radio" name="recommend">Maybe
+                <br>
+                <input type="radio" name="recommend">Not sure
+            </div>
+            <div>
+                <label id="label-feature">What is your favorite feature of freeCodeCamp?</label>
+                <br>
+                <select name="feature" id="feature">
+                    <option disabled>Select an option</option>
+                    <option>Challenges</option>
+                    <option selected>Projects</option>
+                    <option>Community</option>
+                    <option>Open Source</option>
+                </select>
+            </div>
+            <div>
+                <label>What would you like to see improved? <font size="2">(Check all that apply)</font></label>
+                <br>
+                <input type="checkbox" value="option">Front-end Projects
+                <br>
+                <input type="checkbox" value="option">Back-end Projects
+                <br>
+                <input type="checkbox" value="option" >Data Visualization
+                <br>
+                <input type="checkbox" value="option" >Challenges
+                <br>
+                <input type="checkbox" value="option" >Open Source Community
+                <br>
+                <input type="checkbox" value="option" >Gitter help rooms
+                <br>
+                <input type="checkbox" value="option" >Videos
+                <br>
+                <input type="checkbox" value="option" >City Meetups
+                <br>
+                <input type="checkbox" value="option" >Wiki
+                <br>
+                <input type="checkbox" value="option" >Forum
+                <br>
+                <input type="checkbox" value="option" >Additional Courses
+                <br>
+            </div>
+            <div>
+                <label>Any comments or suggestions?</label>
+                <br>
+                <textarea id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+
+        </form>
+    </main>
+</body>
+</html>
