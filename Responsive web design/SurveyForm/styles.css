@@ -1,0 +1,115 @@
+body{
+    font-family: 'Roboto',sans-serif;
+    background-image: url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg');
+    /*Centramos la imagen*/
+    background-position: center center;
+    /*Impedimos la repeticion*/
+    background-repeat: no-repeat;
+    /*Fijar imagen*/
+    background-attachment: fixed;
+    /*Reescalado*/
+    background-size: cover;
+
+}
+header{
+    color: white;
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+
+}
+#title{
+    font-size: 30px;
+}
+#description{
+    font-style: italic;
+}
+#survey-form{
+    background-color: rgba(37, 37, 69, 0.9);
+    padding: 30px;
+    color: white;
+    display: flex;
+    max-width: 100%;
+    width: 30%;
+    flex-direction: column;
+}
+#survey-form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+#survey-form div label{
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight:bolder;
+}
+
+#name{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    height: 20px;
+    padding-left: 6px;
+}
+#email{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    height: 20px;
+    padding-left: 6px;
+}
+#number{
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    height: 20px;
+    padding-left: 6px;
+}
+#dropdown{
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    height: 28px;
+    padding-left: 6px;
+}
+#feature{
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    height: 28px;
+    padding-left: 6px;
+}
+#radio-options section{
+    display: flex;
+    flex-direction: row;
+}
+#radio-options section p{
+    padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#checkbox-options section{
+    display: flex;
+    flex-direction: row;
+}
+#checkbox-options section p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#comment textarea{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#buttom-submit input{
+    padding: 10px;
+    color: white;
+    background-color: rgb(97, 249, 97);
+    border-style: solid;
+    border-color: rgb(97, 249, 97);
+    border-radius: 5px;
+}
