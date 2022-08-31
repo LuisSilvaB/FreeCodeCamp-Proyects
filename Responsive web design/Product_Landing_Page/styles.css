@@ -1,0 +1,95 @@
+#header{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-color: brown;
+}
+@media (max-width:700px) {
+    #header{
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-color: brown;
+    }
+}
+/*
+    border-style: solid;
+    border-color: brown;
+*/
+#logo{
+    flex: 1;
+    border-style: solid;
+    border-color: brown;
+}
+#nav-bar{
+    display: flex;
+    flex: 2;
+    justify-content: flex-end;
+    border-style: solid;
+    border-color: brown;
+}
+@media (max-width:700px) {
+    #nav-bar{
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        align-items: center;
+        border-style: solid;
+        border-color: brown;
+    }
+}
+.nav-link{
+    border: solid 2px coral;
+    max-width: 100%;
+    width: 20%;
+}
+
+#form{
+    border-style: solid;
+    border-color: brown;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+#form h2{
+    border-style: solid;
+    border-color: brown;
+    max-width: 100%;
+    width: 400px;
+}
+#email{
+    width: 250px;
+}
+#submit{
+    width: 200px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 2,
+  'opsz' 200,
+}
+.features{
+    display: flex;
+    /*! En el uso de justify content el centrado es cuando se encuentra cun una direccion en row*/
+    /*! En el uso de Aling items el centrado es cuando se encuentra cun una direccion en column*/
+    flex-direction: column;
+    align-items: center;
+}
+.features div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    width: 700px;
+    border-style: solid;
+    border-color: brown;
+}
+box-icon{
+    margin-right: 20px;
+    margin-left: 50px;
+}
