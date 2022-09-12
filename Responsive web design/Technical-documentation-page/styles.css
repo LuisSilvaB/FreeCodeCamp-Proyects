@@ -20,7 +20,7 @@ p{
     display: grid;
     grid-template-columns: 300px auto;
 }
-#menu{
+#navbar{
     position: fixed;
     margin-top: -3px;
     margin-left: -3px ;
@@ -30,17 +30,17 @@ p{
     height:1200px;
     border-color: rgb(199, 199, 199);
 }
-#menu h2{
+#navbar h2{
     text-align: center;
 }
-#menu div{
+#navbar div{
     border-color: rgb(199, 199, 199);
     border-style: solid;
     border-width: 1px;
     padding: 13px;
     margin-right:-4px;
 }
-#menu a{
+#navbar a{
     text-decoration: none;
     color: black;
 }
@@ -69,13 +69,18 @@ p{
 .callout p{
     line-height: 0.6rem;
 }
-@media (max-width : 700px) {
+@media (max-width : 1500px) {
+    .callout p{
+        line-height: 2rem;
+    }
+}
+@media (max-width : 900px) {
     #main-doc{
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    #menu{
+    #navbar{
         overflow-x: hidden;
         overflow-y: scroll;
         position: inherit;
@@ -83,7 +88,7 @@ p{
         margin-left: -3px ;
         border-style: solid;
         border-width: 4px;
-        width:700px;
+        width:900px;
         max-width: 100%;
         height:500px;
     }
