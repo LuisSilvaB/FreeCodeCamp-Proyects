@@ -2,38 +2,49 @@ body,html{
     width: 100%;
     margin: 0%;
     padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7rem;
+    color: rgb(120, 120, 120);
+    scroll-padding-top: 20px;
+}
+h1{
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+}
+p{
+    font-size: 17px;
+    font-weight: 100;
 }
 #main-doc{
     display: grid;
-    grid-template-columns: 275px auto;
+    grid-template-columns: 300px auto;
 }
 #menu{
     position: fixed;
     margin-top: -3px;
     margin-left: -3px ;
-    border-color: rgb(159, 159, 159);;
     border-style: solid;
     border-width: 4px;
-    width:280px;
-    height: 1000px;
+    width:300px;
+    height:1200px;
+    border-color: rgb(199, 199, 199);
 }
 #menu h2{
     text-align: center;
 }
 #menu div{
-    border-color: rgb(159, 159, 159);
+    border-color: rgb(199, 199, 199);
     border-style: solid;
     border-width: 1px;
     padding: 13px;
-    margin-right:-2px;
+    margin-right:-4px;
 }
 #menu a{
     text-decoration: none;
     color: black;
 }
 #ghost{
-    border-style: solid;
-    border-color: rgb(0, 239, 60);
     width: 275px;   
     max-height: 100%;
     max-width: 100%;
@@ -47,4 +58,44 @@ body,html{
 #documentation .main-section{
     max-width: 100%;
     margin-right:20px ;
+}
+.callout{
+    margin-left: 10px;
+    background-color: rgba(243, 243, 243, 0.866);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.callout p{
+    line-height: 0.6rem;
+}
+@media (max-width : 700px) {
+    #main-doc{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #menu{
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: inherit;
+        margin-top: -3px;
+        margin-left: -3px ;
+        border-style: solid;
+        border-width: 4px;
+        width:700px;
+        max-width: 100%;
+        height:500px;
+    }
+    .callout{
+        margin-left: 10px;
+        background-color: rgba(243, 243, 243, 0.866);
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        padding-right: 10px;
+    }
+    .callout p{
+        line-height: 1.5rem;
+    }
 }
